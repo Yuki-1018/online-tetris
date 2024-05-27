@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>1v1 Tetris</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="homeScreen">
+    <h1>1v1 Tetris</h1>
+    <button id="createRoomBtn">Create Room</button>
+    <div id="roomsList"></div>
+  </div>
+
+  <div id="gameScreen" class="hidden">
+    <h1 id="status"></h1>
+    <div id="gameContainer">
+      <div id="player1">
+        <h2>Your Game</h2>
+        <canvas id="player1Canvas" width="300" height="600"></canvas>
+      </div>
+      <div id="player2">
+        <h2>Opponent's Game</h2>
+        <canvas id="player2Canvas" width="300" height="600"></canvas>
+      </div>
+    </div>
+    <div id="controls">
+      <button id="leftBtn">Left</button>
+      <button id="rightBtn">Right</button>
+      <button id="downBtn">Down</button>
+      <button id="rotateBtn">Rotate</button>
+    </div>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="main.js"></script>
+  <script src="tetris.js"></script>
+</body>
+</html>
