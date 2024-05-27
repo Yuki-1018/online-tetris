@@ -1,0 +1,54 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #222;
+  color: #fff;
+}
+
+.hidden {
+  display: none;
+}
+
+#homeScreen, #gameScreen {
+  text-align: center;
+}
+
+button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+#roomsList {
+  margin-top: 20px;
+}
+
+#gameContainer {
+  display: flex;
+  justify-content: center;
+}
+
+#player1, #player2 {
+  margin: 10px;
+}
+
+canvas {
+  border: 2px solid #fff;
+}
+
+#controls {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+#controls button {
+  margin: 5px;
+  padding: 15px;
+  font-size: 18px;
+}
